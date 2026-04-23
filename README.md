@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Healthcare CDC Data Quality & Snowflake Migration Framework
 
 ## Overview
@@ -44,13 +43,43 @@ This portfolio is intended to demonstrate my approach to healthcare cloud data e
 - Bronze / Silver / Gold style validation checkpoints
 - Healthcare data controls for auditability and trust
 
-## Technology
+## Repository Structure
+- `python/` - validation framework and CDC scripts
+- `sql/` - reconciliation and CDC monitoring queries
+- `tests/` - unit tests
+- `docs/` - architecture notes and interview talking points
+- `.github/workflows/` - CI pipeline
+
+## Proof of Execution
+This framework was:
+- Executed locally in VS Code
+- Validated against sample CDC extract data
+- Unit tested with pytest
+- Prepared for CI/CD execution using GitHub Actions
+
+## Sample Validation Output
+
+```python
+{'file': 'cdc_extract_claims.csv',
+ 'row_count': 4,
+ 'missing_columns': [],
+ 'duplicate_events': 1,
+ 'invalid_operations': 0,
+ 'late_arrivals_over_240_minutes': 2}
+
+## Technology Stack
 - Snowflake
 - SQL
 - Python
 - Pandas
 - GitHub Actions
 - Healthcare data validation patterns
+
+## Business Alignment
+- Healthcare payer and provider datasets
+- Regulatory reporting support
+- Cloud migration validation
+- CDC reliability and data trust controls
 
 ## Author
 Ponnani Subramanian Ananthanarayanan
@@ -88,4 +117,3 @@ These are representative work samples built to demonstrate design thinking and d
 
 ## Suggested description
 Healthcare CDC / Snowflake migration work samples: reconciliation SQL, Python data-quality checks, latency monitoring, and audit-ready controls.
->>>>>>> 0f12be5 (Initial showcase commit - CDC validation, Snowflake QA, passing tests)
