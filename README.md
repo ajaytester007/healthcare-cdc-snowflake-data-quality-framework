@@ -65,7 +65,8 @@ This framework was:
  'missing_columns': [],
  'duplicate_events': 1,
  'invalid_operations': 0,
- 'late_arrivals_over_240_minutes': 2}
+ 'late_arrivals_over_240_minutes': 2
+}
 
 ## Technology Stack
 - Snowflake
