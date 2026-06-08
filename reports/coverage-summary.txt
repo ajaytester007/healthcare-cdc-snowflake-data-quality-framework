@@ -1,0 +1,7 @@
+Name                           Stmts   Miss  Cover
+--------------------------------------------------
+python/__init__.py                 0      0   100%
+python/dq_rules_framework.py      35      5    86%
+tests/test_dq_rules.py            21      0   100%
+--------------------------------------------------
+TOTAL                             56      5    91%
