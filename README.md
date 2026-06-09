@@ -67,6 +67,18 @@ Latest successful workflow execution:
 
 Artifacts can be downloaded directly from the GitHub Actions run page.
 
+### CI/CD Reporting Evidence
+
+Latest successful GitHub Actions execution generated:
+
+- JUnit XML test results
+- HTML coverage reports
+- Stakeholder dashboard
+- Downloadable GitHub Actions artifacts
+
+Workflow Status: Passing
+Artifact Publication: Enabled
+
 ### Latest Validation Evidence
 
 - Repository: https://github.com/ajaytester007/healthcare-cdc-snowflake-data-quality-framework
