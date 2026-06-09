@@ -1,3 +1,7 @@
+![Python CI](https://github.com/ajaytester007/healthcare-cdc-snowflake-data-quality-framework/actions/workflows/python-ci.yml/badge.svg)
+
+![Data Quality Test Reports](https://github.com/ajaytester007/healthcare-cdc-snowflake-data-quality-framework/actions/workflows/test-reports.yml/badge.svg)
+
 # Healthcare CDC Data Quality & Snowflake Migration Framework
 
 ## Overview
@@ -20,6 +24,78 @@ This portfolio is intended to demonstrate my approach to healthcare cloud data e
 - `python/` - data quality checks and CDC validation scripts
 - `tests/` - sample validation tests
 - `.github/workflows/` - CI workflow examples
+
+## Quality Engineering & Reporting Showcase
+
+This repository demonstrates:
+
+- Healthcare CDC validation
+- Source-to-target reconciliation
+- SQL-based data validation
+- Python automation
+- Automated unit testing with pytest
+- JUnit XML reporting
+- HTML coverage reporting
+- GitHub Actions CI/CD execution
+- Downloadable test artifacts
+- Stakeholder-ready quality dashboards
+
+### Test Execution Evidence
+
+| Metric | Result |
+|----------|----------|
+| Automated Tests | 4 Passed |
+| Coverage | 60% |
+| JUnit XML | Generated |
+| HTML Coverage Report | Generated |
+| GitHub Actions Workflow | Passing |
+| Artifact Publication | Enabled |
+
+### Generated Reports
+
+- reports/junit-results.xml
+- reports/coverage_html/index.html
+- reports/stakeholder-test-summary.html
+
+### GitHub Actions Validation
+
+Latest successful workflow execution:
+
+- Python CI Workflow
+- Data Quality Test Reports Workflow
+- Automated artifact publication
+
+Artifacts can be downloaded directly from the GitHub Actions run page.
+
+### Latest Validation Evidence
+
+- Repository: https://github.com/ajaytester007/healthcare-cdc-snowflake-data-quality-framework
+- Merged PR: https://github.com/ajaytester007/healthcare-cdc-snowflake-data-quality-framework/pull/1
+- Latest Successful GitHub Actions Run: https://github.com/ajaytester007/healthcare-cdc-snowflake-data-quality-framework/actions/runs/27167725289
+- Artifact: `healthcare-cdc-dq-test-reports`
+
+### Reporting Outputs
+
+The framework generates the following execution evidence:
+
+| Report | Location | Purpose |
+|---|---|---|
+| Stakeholder Summary | `reports/stakeholder-test-summary.html` | QA leadership / business-facing execution summary |
+| JUnit XML | `reports/junit-results.xml` | CI/CD test evidence and pipeline traceability |
+| Coverage HTML | `reports/coverage_html/index.html` | Engineer-facing coverage drilldown |
+| Coverage XML | `reports/coverage.xml` | Machine-readable coverage output |
+| Coverage Summary | `reports/coverage-summary.txt` | Console-style coverage evidence |
+
+### Local Execution
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+
+pip install -r requirements-dev.txt
+pip install pytest-cov
+
+pytest tests -v --junitxml=reports/junit-results.xml --cov=python --cov-report=term --cov-report=html:reports/coverage_html
 
 ## Key Capabilities
 ### CDC Validation
@@ -118,3 +194,41 @@ These are representative work samples built to demonstrate design thinking and d
 
 ## Suggested description
 Healthcare CDC / Snowflake migration work samples: reconciliation SQL, Python data-quality checks, latency monitoring, and audit-ready controls.
+
+
+## Test Reporting / Evidence Pack
+
+This repo includes generated QA evidence under `reports/`:
+
+- `reports/stakeholder-test-summary.html` - stakeholder-ready pass/fail and coverage summary
+- `reports/junit-results.xml` - CI/CD-compatible test execution result
+- `reports/coverage_html/index.html` - detailed Python coverage report
+- `reports/coverage-summary.txt` - terminal coverage summary
+
+Run locally from VS Code:
+
+```bash
+python -m pip install -r requirements-dev.txt
+coverage run -m pytest -q --junitxml=reports/junit-results.xml
+coverage xml -o reports/coverage.xml
+coverage html -d reports/coverage_html
+coverage report
+```
+
+For Allure setup and CI/CD reporting, see `docs/allure_and_reporting_guide.md`.
+
+
+## Interview Talking Points
+
+This framework demonstrates practical experience with:
+
+- SQL-based data validation
+- Source-to-target reconciliation
+- CDC validation
+- Batch testing
+- Python automation
+- PyTest
+- Coverage reporting
+- GitHub Actions CI/CD
+- Healthcare payer data quality controls
+- Release readiness reporting
